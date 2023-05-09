@@ -8,7 +8,9 @@ export default {
     extend: {
       backgroundImage: {
         'Banner' : 'url("./src/assets/images/more/24.jpg")',
-        'MenuBg': "url('./src/assets/images/more/15.jpg')"
+        'MenuBg': "url('./src/assets/images/more/15.jpg')",
+        'ProductsBG1': "url('./src/assets/images/more/1.png')",
+        "addCoffeeBg": "url('./src/assets/images/more/11.png')"
       }
     },
   },
