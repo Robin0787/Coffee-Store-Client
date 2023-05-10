@@ -10,11 +10,11 @@ const Home = () => {
     return (
         <section>
             {/* Navbar and Banner */}
-            <article className='bg-Banner bg-cover bg-no-repeat h-screen px-10 text-white '>
+            <article className='bg-Banner bg-cover bg-no-repeat  lg:h-screen px-10 text-white '>
                 <NavigationMenu />
-                <div className='md:flex justify-center items-center space-y-8 md:space-y-0'>
-                    <div className='md:w-1/2'>
-                        <img src={coffee} className='w-[80%] object-fill opacity-40 hover:opacity-60 duration-700' />
+                <div className='md:flex justify-center items-center space-y-8 md:space-y-0 pb-10'>
+                    <div className='lg:w-1/2 md:w-1/3'>
+                        <img src={coffee} className='w-[80%] object-contain opacity-40 hover:opacity-60 duration-700 pb-10' />
                     </div>
                     <div className='space-y-5 md:w-1/2 text-center md:text-left'>
                         <h1 className='text-sm leading-tight uppercase text-gray-400'>Would you like A Cup of <br /> <span className='text-5xl text-gray-300'>Delicious Coffee?</span></h1>
