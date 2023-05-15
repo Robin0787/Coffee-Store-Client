@@ -8,7 +8,6 @@ const EditCoffeeInfo = () => {
     const navigate = useNavigate();
     const coffeeInfo = useLoaderData();
     const {_id, name, price, supplier, category, chef, taste, details, photo } = coffeeInfo;
-    console.log(coffeeInfo);
     function handleSubmit (e) {
         e.preventDefault();
         const form = e.target;
@@ -21,8 +20,7 @@ const EditCoffeeInfo = () => {
         const details = form.details.value;
         const photo = form.photo.value;
         const updatedInfo = { name, price, supplier, category, chef, taste, details, photo };
-        console.log(updatedInfo);
-        fetch(`http://localhost:1000/update-coffee/${_id}`, {
+        fetch(`https://coffee-server-nu.vercel.app/update-coffee/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': "application/json"

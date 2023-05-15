@@ -26,7 +26,7 @@ const router = createBrowserRouter([
             {
                 path: "/edit-coffee-info/:id",
                 element: <EditCoffeeInfo />,
-                loader: ({params}) => fetch(`http://localhost:1000/coffee/${params.id}`)
+                loader: ({params}) => fetch(`https://coffee-server-nu.vercel.app/coffee/${params.id}`)
             }
         ]
     },

@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 const Products = () => {
     const [allCoffee, setAllCoffee] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:1000/coffee-collection')
+        fetch('https://coffee-server-nu.vercel.app/coffee-collection')
             .then(res => res.json())
             .then(data => {
                 setAllCoffee(data);
@@ -22,7 +22,7 @@ const Products = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:1000/delete-coffee/${id}`, { method: "DELETE" })
+                fetch(`https://coffee-server-nu.vercel.app/delete-coffee/${id}`, { method: "DELETE" })
                     .then(res => res.json())
                     .then(data => {
                         if (data.deletedCount === 1) {

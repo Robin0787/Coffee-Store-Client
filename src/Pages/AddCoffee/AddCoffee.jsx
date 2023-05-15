@@ -17,8 +17,7 @@ const AddCoffee = () => {
         const details = form.details.value;
         const photo = form.photo.value;
         const coffeeInfo = { name, price, supplier, category, chef, taste, details, photo };
-        console.log(coffeeInfo);
-        fetch('http://localhost:1000/add-coffee', {
+        fetch('https://coffee-server-nu.vercel.app/add-coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -53,43 +52,43 @@ const AddCoffee = () => {
                                 <div className='md:w-1/2 space-y-5'>
                                     <div className='space-y-3'>
                                         <label htmlFor="Name" className='text-md font-semibold text-gray-600'>Name</label><br />
-                                        <input type="text" name='name' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Name' /><br />
+                                        <input type="text" name='name' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Name' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Supplier" className='text-md font-semibold text-gray-600'>Supplier</label><br />
-                                        <input type="text" name='supplier' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Supplier' /><br />
+                                        <input type="text" name='supplier' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Supplier' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Category" className='text-md font-semibold text-gray-600'>Category</label><br />
-                                        <input type="text" name='category' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Category' /><br />
+                                        <input type="text" name='category' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Category' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Photo" className='text-md font-semibold text-gray-600'>Photo</label><br />
-                                        <input type="text" name='photo' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Photo URL' /><br />
+                                        <input type="text" name='photo' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Photo URL' /><br />
                                     </div>
                                 </div>
                                 <div className='md:w-1/2 space-y-5'>
                                     <div className='space-y-3'>
                                         <label htmlFor="Price" className='text-md font-semibold text-gray-600'>Price</label><br />
-                                        <input type="text" name='price' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Price' /><br />
+                                        <input type="text" name='price' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Price' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Taste" className='text-md font-semibold text-gray-600'>Taste</label><br />
-                                        <input type="text" name='taste' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Taste' /><br />
+                                        <input type="text" name='taste' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Taste' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Details" className='text-md font-semibold text-gray-600'>Details</label><br />
-                                        <input type="text" name='details' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Details' /><br />
+                                        <input type="text" name='details' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Coffee Details' /><br />
                                     </div>
                                     <div className='space-y-3'>
                                         <label htmlFor="Chef" className='text-md font-semibold text-gray-600'>Chef</label><br />
-                                        <input type="text" name='chef' className='w-full p-2 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Chef Name' /><br />
+                                        <input type="text" name='chef' className='w-full p-3 bg-white rounded-md focus:outline-0 focus:ring-4 ring-gray-200 duration-300' placeholder='Enter Chef Name' /><br />
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className='flex justify-center'>
-                                    <button type='submit' className='text-md py-2 px-4 border border-gray-100 hover:border-gray-300 rounded-md bg-none bg-[#a57c47] hover:bg-[#522e27] text-white duration-500 w-full'>Add Coffee
+                                    <button type='submit' className='text-md py-3 border border-gray-100 hover:border-gray-300 rounded-md bg-none bg-[#a57c47] hover:bg-[#522e27] text-white duration-500 w-full'>Add Coffee
                                     </button>
                                 </div>
                             </div>
